@@ -8,8 +8,30 @@
 // console.log (animales[7]);
 // console.log (typeof animales);
 // console.log (animales.length);
-// -------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 
+// // Cuántos elementos tiene
+// console.log(frutas.length) //
+
+// // Agregar al final
+// frutas.push("naranja")
+
+// // Eliminar el último
+// frutas.pop()
+
+// // Agregar al inicio
+// frutas.unshift("sandía")
+
+// // Eliminar el primero
+// frutas.shift()
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------
+// viernes con pedro 20/3/26
 
 // let frutas = ['manzana','pera','mamon','naranja','lechoza','uva'];
 
@@ -56,16 +78,30 @@
 // agregar los que no estan, contar cuantos estudiantes hay y determinar si 
 // se alcanzo un minimo de estud14iantes
 
-let estudianteNuevo = prompt('Ingresar tu nombre:').toLowerCase();
+// let estudianteNuevo = prompt('Ingresar tu nombre:').toLowerCase();
 
-let escuela = ['pedro', 'luis', 'alfonso', 'manolo', 'josefina', 'pitufina', 'grunon', 'leo', 'mario'];
-const minimoEstudiantes = 10;
+// let escuela = ['pedro', 'luis', 'alfonso', 'manolo', 'josefina', 'pitufina', 'grunon', 'leo', 'mario'];
+// const minimoEstudiantes = 10;
 
-if (escuela.includes(estudianteNuevo)) {
-  alert('Este estudiante ya existe en la base de datos.');
-} else if (escuela.length >= minimoEstudiantes) {
-  alert('No se puede agregar, se alcanzó el límite de ' + minimoEstudiantes + ' estudiantes.');
-} else {
-  escuela.push(estudianteNuevo);
-  alert('Bienvenido, ' + estudianteNuevo + '.');
-}
+// if (escuela.includes(estudianteNuevo)) {
+//   alert('Este estudiante ya existe en la base de datos.');
+// } else if (escuela.length >= minimoEstudiantes) {
+//   alert('No se puede agregar, se alcanzó el límite de ' + minimoEstudiantes + ' estudiantes.');
+// } else {
+//   escuela.push(estudianteNuevo);
+//   alert('Bienvenido, ' + estudianteNuevo + '.');
+// }
+
+// -------------------------------------------------------------------------------------------------------------
+// 22/3/26 domingo en la noche, casa
+
+let frutas = ["manzana", "pera", "uva"]
+
+// for (let i = 0; i < frutas.length; i++) {
+//     console.log(frutas[i])
+// }
+
+// Forma más moderna
+frutas.forEach(fruta => {
+    alert(fruta)
+})
