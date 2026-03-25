@@ -69,3 +69,6 @@ if (escuela.includes(estudianteNuevo)) {
   escuela.push(estudianteNuevo);
   alert('Bienvenido, ' + estudianteNuevo + '.');
 }
+
+// ----------------------------------------------------------------------------------------------------------
+

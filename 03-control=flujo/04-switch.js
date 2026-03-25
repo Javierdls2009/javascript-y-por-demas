@@ -1,3 +1,7 @@
+// El switch es para valores exactos como "rojo", 1, "A". 
+// Cuando necesitas comparar rangos como nota >= 90 siempre usa if/else.
+
+
 // // Con números
 // switch (numero) {
 //     case 1:
@@ -187,45 +191,135 @@
 
 
 
-let jugador1 = prompt("Jugador 1: piedra, papel o tijera: ").toLowerCase()
-let jugador2 = prompt("Jugador 2: piedra, papel o tijera: ").toLowerCase()
-let combinacion = jugador1 + "-" + jugador2
+// let jugador1 = prompt("Jugador 1: piedra, papel o tijera: ").toLowerCase()
+// let jugador2 = prompt("Jugador 2: piedra, papel o tijera: ").toLowerCase()
+// let combinacion = jugador1 + "-" + jugador2
 
-switch (combinacion) {
-    case "piedra-piedra":
-        alert("empate")
-        break;
-    case "piedra-papel":
-        alert("gana jugador 2")
-        break;
-    case "piedra-tijera":
-        alert("gana jugador 1")
-        break;
+// switch (combinacion) {
+//     case "piedra-piedra":
+//         alert("empate")
+//         break;
+//     case "piedra-papel":
+//         alert("gana jugador 2")
+//         break;
+//     case "piedra-tijera":
+//         alert("gana jugador 1")
+//         break;
         
-    case "papel-piedra":
-        alert("gana jugador 1")
-        break;
+//     case "papel-piedra":
+//         alert("gana jugador 1")
+//         break;
         
-    case "papel-papel":
-        alert("empate")
-        break;
+//     case "papel-papel":
+//         alert("empate")
+//         break;
         
-    case "papel-tijera":
-        alert("gana jugador 2")
-        break;
+//     case "papel-tijera":
+//         alert("gana jugador 2")
+//         break;
         
-    case "tijera-piedra":
-        alert("gana jugador 2")
-        break;
+//     case "tijera-piedra":
+//         alert("gana jugador 2")
+//         break;
         
-    case "tijera-papel ":
-        alert("gana jugador 1")
-        break;
+//     case "tijera-papel ":
+//         alert("gana jugador 1")
+//         break;
         
-    case "tijera-tijera":
-        alert("empate")
+//     case "tijera-tijera":
+//         alert("empate")
+//         break;
+//     default:
+//         alert("uno de los dos puso una burrada, no sirve asi.")
+//         break;
+// }
+// ----------------------------------Clase de pedro 23/3/26----------------------------------------
+
+// alert("Bienvenido a esta escuela")
+
+// let nota = Number(prompt("Introduzca su calificacion: "))
+
+// switch (true) {
+//     case nota >= 90 && nota <= 100:
+//         alert("Excelente calificacion")
+//         break;
+//     case nota > 80 && nota <= 90:
+//         alert("Tienes potencial")
+//         break;
+//     case nota >= 70 && nota <= 80:
+//         alert("Puedes mejorar")
+//         break;
+//     default:
+//         alert("En completivo")
+//         break;
+// }
+
+
+// let dia = new Date().getDay();
+// dia = Number(prompt(" Ingresa un dia de semana en numeros: "))
+
+// switch (true) {
+//     case dia == 0:
+//         alert("Domingo")
+//         break;
+
+//     case dia == 1:
+//         alert("Lunes")
+//         break;
+//     case dia == 2:
+//         alert("Martes")
+//         break;
+//     case dia == 3:
+//         alert("Miercoles")
+//         break;
+//     case dia == 4:
+//         alert("Jueves")
+//         break;
+//     case dia == 5:
+//         alert("Viernes")
+//         break;
+//     case dia == 6:
+//         alert("Sabado")
+//         break;
+//     default:
+//         break;
+// }
+
+// ---------------------------------------TAREA PARA LO MUCHACHO, VALIDAR LA FECHA INGRESADA Y VERIFICAR LA ESTACION EL ANIO
+// ---------------------------------------TAREA PARA LO MUCHACHO, CREAR UNA CALCULADORA DONDE SE LE PIDA AL USUARIO LOS NUMEROS Y LA OPERACION,
+// ---------------------------------------A REALIZAR (SUMA, RESTA, DIVISION, MULTIPLICACION, POTENCIA)
+
+
+
+
+// -- CALCULADORA
+let numero1 = Number(prompt(" ingresar numero 1: "))
+let numero2 = Number(prompt(" ingresar numero 2: "))
+let operacion = prompt("Ingresa la operación (+, -, *, /): ")
+switch (operacion) {
+    case "+":
+        alert(numero1 + numero2)
+        break;
+
+    case "-":
+        alert(numero1 - numero2)
+        break;
+
+    case "*":
+        alert(numero1 * numero2)
+        break;
+
+    case "/":
+        if (operacion === 0){
+            alert(" este numero no es divisible")
+        } else{
+            alert (numero1 / numero2)
+        }
+        break;
+    case "**":
+        alert( numero1 ** numero2)
         break;
     default:
-        alert("uno de los dos puso una burrada, no sirve asi.")
+        alert(" esta operacion matematica no existe. ingrese las que existen")
         break;
 }
