@@ -83,30 +83,6 @@
 // let escuela = ['pedro', 'luis', 'alfonso', 'manolo', 'josefina', 'pitufina', 'grunon', 'leo', 'mario'];
 // const minimoEstudiantes = 10;
 
-<<<<<<< HEAD
-// if (escuela.includes(estudianteNuevo)) {
-//   alert('Este estudiante ya existe en la base de datos.');
-// } else if (escuela.length >= minimoEstudiantes) {
-//   alert('No se puede agregar, se alcanzó el límite de ' + minimoEstudiantes + ' estudiantes.');
-// } else {
-//   escuela.push(estudianteNuevo);
-//   alert('Bienvenido, ' + estudianteNuevo + '.');
-// }
-
-// -------------------------------------------------------------------------------------------------------------
-// 22/3/26 domingo en la noche, casa
-
-let frutas = ["manzana", "pera", "uva"]
-
-// for (let i = 0; i < frutas.length; i++) {
-//     console.log(frutas[i])
-// }
-
-// Forma más moderna
-frutas.forEach(fruta => {
-    alert(fruta)
-})
-=======
 if (escuela.includes(estudianteNuevo)) {
   alert('Este estudiante ya existe en la base de datos.');
 } else if (escuela.length >= minimoEstudiantes) {
@@ -118,4 +94,3 @@ if (escuela.includes(estudianteNuevo)) {
 
 // ----------------------------------------------------------------------------------------------------------
 
->>>>>>> 50b09515e79f6a14c77f09abba8be3faabe7ce86

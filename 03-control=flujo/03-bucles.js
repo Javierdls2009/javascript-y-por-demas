@@ -52,31 +52,17 @@
 
 // ----------------------------------------------------
 
-// Usa un for para mostrar los números delnumero 10.
+//                              Usa un for para mostrar los números del 1 al 10.
 
-
-
-// for( let num = 1; num < 10; num++ ){
+// for (let num = 1; num <= 10; num++) {
 //     console.log(num)
 // }
 
+
+
 // Usa un for para mostrar solo los números pares del 1 al 20.
-// 💡 Pista: un número es par cuando numero % 2 === 0
+// Pista: numero % 2
 
-// for(let num = 1; num <=20; num++){
-//     if (num % 2 === 0){
-//         console.log(num)
-//     }
-// }
-
-// Usa un while para mostrar una cuenta regresiva del 10 al 0.
-// 10, 9, 8, 7... 0 → "¡Despegue!"
-
-let cont = 10  // empieza en 10
-
-while (cont >= 0) {  // repite mientras sea mayor o igual a 0
-    console.log(cont)  // muestra el número
-    cont--  // resta 1
+for ( let num = 1; num % 2; num++){
+    console.log(num)
 }
-
-console.log("¡Despegue!")  // fuera del while

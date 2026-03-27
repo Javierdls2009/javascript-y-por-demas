@@ -151,6 +151,7 @@ el mensaje en pantalla sera (nombre del usuario tiene edad)
 //     alert('neutro')
 // }
 
-// -------------------------------------------------------------------------------------------------
-                                            // arrays      
+
+
+
 
