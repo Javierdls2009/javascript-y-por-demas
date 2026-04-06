@@ -37,6 +37,13 @@
 
 // --------------------------------------------------------------------------------------------------------------------------
                                                         // 4. Calcular el precio con descuento
+
+// miembro y cupon 30% (0.70)                                                        
+// miembro = 15% (0.85)
+// cupon = 10%(0,90)
+// 
+
+
 // let precio = 100;
 // let esMiembro = true;
 // let cupón = true;
@@ -55,3 +62,28 @@
 // "Precio final: $70"
 
 // --------------------------------------------------------------------------------------------------------------------------
+
+/*
+realizar un descuento a los usuarios
+
+1- los usuarios que son miembros despues de 1000 tienen un 10%
+2- los usuarios que son miembros despues de 4999 tiene un 25%
+3- los usuarios que no son miembros y compraron mas de 4999 15%
+4- los usuarios que no son miembros y no pasan de 5000 no tienen descuento
+
+*/
+
+let esMiembro = prompt(" sos miembro? (si/no)").toLowerCase() === "si";
+let total = Number(prompt("ingresar monto de la compra: "));
+let desc = 0;
+
+if (esMiembro && total > 4999) {
+    desc = 0.25;
+} else if (esMiembro && total > 1000) {
+    desc = 0.10;
+} else if (!esMiembro && total > 4999) {
+    desc = 0.15;
+}
+
+let final = total - (total * desc);
+alert(`Descuento: ${desc * 100}% | Total a pagar: ${final}`);
