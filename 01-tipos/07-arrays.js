@@ -1,3 +1,68 @@
+// ¿Qué es un array?
+// Un array es una lista de valores guardados en una sola variable.
+// En vez de hacer esto:
+
+//  fruta1 = "manzana";
+//     let fruta2 = "pera";
+//     let fruta3 = "uva";
+// Puedes hacer esto:
+//     frutas = ["manzana", "pera", "uva"];
+
+// Cómo acceder a un elemento
+// Los arrays usan índices que empiezan desde 0:
+// javascriptlet frutas = ["manzana", "pera", "uva"];
+
+// console.log(frutas[0]); // manzana
+// console.log(frutas[1]); // pera
+// console.log(frutas[2]); // uva
+
+// Propiedades y métodos más usados
+//  frutas = ["manzana", "pera", "uva"];
+
+// frutas.length;        // 3 — cuántos elementos tiene
+// frutas.push("melón"); // agrega al final
+// frutas.pop();         // elimina el último
+// frutas.shift();       // elimina el primero
+// frutas.unshift("kiwi"); // agrega al inicio
+
+// .includes() es un método de los arrays que te dice si un elemento existe o no dentro del array.
+//  Devuelve true o false.
+
+// Ejemplo:
+//  frutas = ["manzana", "pera", "uva"];
+
+// console.log(frutas.includes("pera"));    // true
+// console.log(frutas.includes("melón"));   // false
+
+// Uso común — combinado con if:
+//  frutas = ["manzana", "pera", "uva"];
+
+// if (frutas.includes("manzana")) {
+//     alert("¡Sí tenemos manzanas!");
+// } else {
+//     alert("No tenemos esa fruta.");
+// }
+
+// También funciona con números:
+//  numeros = [1, 2, 3, 4, 5];
+
+// console.log(numeros.includes(3)); // true
+// console.log(numeros.includes(9));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
 // let animales = ['chanchito', 'caballo'];
 // console.log (animales);
 // console.log (animales[0]);
@@ -91,6 +156,3 @@ if (escuela.includes(estudianteNuevo)) {
   escuela.push(estudianteNuevo);
   alert('Bienvenido, ' + estudianteNuevo + '.');
 }
-
-// ----------------------------------------------------------------------------------------------------------
-
